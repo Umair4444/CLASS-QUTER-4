@@ -22,11 +22,10 @@ model = OpenAIChatCompletionsModel(
 
 config = RunConfig(
     model=model,
-    # model_provider=external_client,
     tracing_disabled=True
 )
 
-# Realstate Agent
+# WRITER AGENT
 writer = Agent(
     name = 'English Tutor Agent',
     instructions= 
